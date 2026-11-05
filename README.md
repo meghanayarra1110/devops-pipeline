@@ -58,6 +58,13 @@ devops-pipeline/
 │   ├── Dockerfile
 │   └── requirements.txt
 │
+├── screenshots/
+│   ├── jenkins-success.png
+│   ├── github-webhook.png
+│   ├── docker-containers.png
+│   ├── flask-application.png
+│   └── health-check.png
+│
 ├── Jenkinsfile
 ├── .gitignore
 └── README.md
