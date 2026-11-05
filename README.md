@@ -16,35 +16,35 @@ Whenever code is pushed to the GitHub repository, a webhook triggers Jenkins. Je
 - **Jenkins** – CI/CD automation
 - **Git & GitHub** – Version control and source code management
 - **Cloudflare Tunnel** – Webhook connectivity
-- **Linux commands / Shell scripting** – Pipeline automation
+- **Shell scripting** – Pipeline automation
 
 ## 🏗️ Project Architecture
 
 ```text
 Developer
-    |
-    | Git Push
-    v
-  GitHub
-    |
-    | Webhook
-    v
+   |
+   | Git Push
+   v
+ GitHub
+   |
+   | Webhook
+   v
 Cloudflare Tunnel
-    |
-    v
-  Jenkins
-    |
-    | Checkout Source Code
-    v
+   |
+   v
+ Jenkins
+   |
+   | Checkout Source Code
+   v
 Build Docker Image
-    |
-    v
+   |
+   v
 Deploy Docker Container
-    |
-    v
+   |
+   v
 Flask Application
-    |
-    v
+   |
+   v
 Health Check
 ```
 
@@ -107,11 +107,11 @@ docker run -d \
 
 ### 4. Access the application
 
-Main application:
+**Main application:**
 
 http://localhost:5002/
 
-Health check:
+**Health check:**
 
 http://localhost:5002/health
 
@@ -127,21 +127,21 @@ Expected health response:
 
 ```text
 Code Change
-    ↓
+   ↓
 Git Commit
-    ↓
+   ↓
 Git Push
-    ↓
+   ↓
 GitHub Webhook
-    ↓
+   ↓
 Jenkins Pipeline
-    ↓
+   ↓
 Docker Image Build
-    ↓
+   ↓
 Container Deployment
-    ↓
+   ↓
 Health Check
-    ↓
+   ↓
 Successful Deployment
 ```
 
@@ -164,21 +164,26 @@ Successful Deployment
 - Automating application deployment.
 - Performing application health checks.
 
-  ## Project Screenshots
+## 📸 Project Screenshots
 
 ### 1. Jenkins Successful Pipeline
+
 ![Jenkins Success](screenshots/jenkins-success.png)
 
 ### 2. GitHub Webhook Response
+
 ![GitHub Webhook](screenshots/github-webhook.png)
 
 ### 3. Docker Running Containers
+
 ![Docker Containers](screenshots/docker-containers.png)
 
 ### 4. Flask Application
+
 ![Flask Application](screenshots/flask-application.png)
 
 ### 5. Application Health Check
+
 ![Health Check](screenshots/health-check.png)
 
 ## 👩‍💻 Author
