@@ -157,6 +157,23 @@ Successful Deployment
 - Automating application deployment.
 - Performing application health checks.
 
+  ## Project Screenshots
+
+### 1. Jenkins Successful Pipeline
+![Jenkins Success](screenshots/jenkins-success.png)
+
+### 2. GitHub Webhook Response
+![GitHub Webhook](screenshots/github-webhook.png)
+
+### 3. Docker Running Containers
+![Docker Containers](screenshots/docker-containers.png)
+
+### 4. Flask Application
+![Flask Application](screenshots/flask-application.png)
+
+### 5. Application Health Check
+![Health Check](screenshots/health-check.png)
+
 ## 👩‍💻 Author
 
 **Meghana Yarra**
